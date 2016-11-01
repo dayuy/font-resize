@@ -1,0 +1,14 @@
+:root {
+  font-size: 10px; }
+
+article {
+  font-size: 1.4rem; }
+
+@media (min-width: 600px) and (max-width: 1200px) {
+  arcticle {
+    font-size: calc($min-font-size + (2 - 1.4) * ((100vw - $min-screen) / (1200 - 800)) ); } }
+@media (min-width: 1200px) {
+  arcticle {
+    font-size: 1.8rem; } }
+
+/*# sourceMappingURL=font.css.map */

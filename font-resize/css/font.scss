@@ -1,0 +1,24 @@
+$min-font-size: 1.4rem;
+$max-font-size: 1.8rem;
+$min-screen: 600px;
+$max-screen: 1200px;
+
+:root{
+	font-size:10px;
+}
+
+article{
+	font-size:$min-font-size;
+}
+
+@media(min-width: $min-screen)and(max-width: $max-screen){
+	arcticle{
+		font-size: calc($min-font-size + (2 - 1.4) * ((100vw - $min-screen) / (1200 - 800)) );
+	}
+}
+
+@media(min-width: $max-screen){
+	arcticle{
+		font-size:$max-font-size;
+	}
+}
